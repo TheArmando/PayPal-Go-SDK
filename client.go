@@ -164,6 +164,7 @@ func (c *Client) NewRequest(method, url string, payload interface{}) (*http.Requ
 		}
 		buf = bytes.NewBuffer(b)
 	}
+	fmt.Println(buf)
 	return http.NewRequest(method, url, buf)
 }
 
