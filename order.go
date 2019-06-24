@@ -15,7 +15,7 @@ func (c *Client) GetOrder(orderID string) (*Order, error) {
 	if err = c.SendWithAuth(req, order); err != nil {
 		return order, err
 	}
-
+	fmt.Println(order)
 	return order, nil
 }
 
